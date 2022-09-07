@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Quicksand&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    transition: all .5s;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.25);
+    padding: 10px 6%;
+    position: -webkit-sticky;
+    position: sticky;
+    /* border-radius: 0 0 10px 10px; */
+    top: 0;
+    z-index: 2;
+    background-color: #264653;
+    transition: all .5s;
+}
+
+li,
+a {
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+    color: #fffdf7;
+}
+
+.logo {
+    width: 60px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.div {
+    display: flex;
+}
+
+h2 {
+    text-decoration: none;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    list-style-type: none;
+    color: #fffdf7;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.nav_links li a {
+    transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #ff9668;
+    text-decoration: underline;
+}
+
+.p {
+    position: fixed;
+    z-index: 5;
+    right: 20px;
+    top: 18px;
+    font-size: xx-large;
+    cursor: pointer;
+    color: #f9fffd;
+}
+
+.cart_icon {
+    font-size: 40px;
+    color: white;
+    margin-left: 20px;
+}
+
+#part1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    height: 100vh;
+    position: fixed;
+}
+
+#part1 img {
+    margin-top: 50px;
+    height: 400px;
+    width: 300px;
+    box-shadow: -4px 4px 5px rgb(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+#part1 button {
+    margin-top: 30px;
+    height: 40px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: #264653;
+    box-shadow: -3px 3px 5px rgb(0, 0, 0, 0.25);
+}
+
+#part2 {
+    width: 75%;
+    height:fit-content;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: black;
+    background-color: #ededed;
+    margin-left: 35%;
+    padding-bottom: 40px;
+}
+
+#part2 section,
+h3,
+#hb {
+    margin-left: 70px;
+}
+
+#part2 section {
+    margin-top: 10px;
+    font-size: 40px;
+    color: #264653;
+}
+
+#part2 #hb {
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 10px;
+    color: #848484;
+}
+
+#part2 #bs {
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 70px;
+    color: #b5b5b5;
+}
+
+#part2 h3 {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 1.5;
+    color: #264653;
+    margin-top: 20px;
+}
+
+#price {
+    font-size: x-large;
+    margin-left: 70px;
+    margin-top: 20px;
+    color: #264653;
+}
+
+#rv_box {
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+#rv {
+    font-size: 30px;
+    color: #264653;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+#wdt {
+    margin-top: 40px;
+    margin-left: 270px;
+    font-size: 23px;
+    color: #264653;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+}
+
+.yr {
+    height: 25px;
+    width: 500px;
+    outline: none;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid #818181;
+    background-color: #efefef;
+}
+
+.user {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#Send {
+    margin-top: 10px;
+    margin-left: 580px;
+    border-radius: 10px;
+    border: none;
+    background-color: #264653;
+    color: white;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 5px;
+    font-family: 'Quicksand', sans-serif;
+    padding-bottom: 5px;
+    font-size: medium;
+}
+
+.line {
+    width: 80%;
+    height: 2px;
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.item{
+    height:fit-content;
+    width:fit-content;
+    background-color: #c8c8c8;
+    padding: 15px;
+    padding-bottom: 26px;
+    border-radius: 15px;
+    margin-top: 30px;
+}
+
+#Reviews{
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.un{
+    margin-top: 4px;
+    color: #848484;
+}
+
+.review{
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 600px;
+}
+
+.imna{
+    display: flex;
+}

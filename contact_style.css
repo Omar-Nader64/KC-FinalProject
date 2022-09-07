@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans&family=Oswald:wght@500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(87, 99, 151);
+}
+
+
+header {
+display: flex;
+justify-content:space-around;
+align-items: center;
+box-shadow: 0px 2px 5px rgb(0, 0, 0,0.25);
+padding: 10px 6%;
+position: -webkit-sticky;
+position: sticky;
+/* border-radius: 0 0 10px 10px; */
+top: 0;
+z-index: 2;
+background-color: rgb(70, 80, 118);
+}
+
+li,
+a {
+text-decoration: none;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+font-size: 20px;
+list-style-type: none;
+color: #fffdf7;
+}
+
+.logo {
+width: 60px;
+height: 55px;
+cursor: pointer;
+}
+
+.div {
+display: flex;
+}
+
+h2 {
+text-decoration: none;
+font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+list-style-type: none;
+color: #fffdf7;
+margin-top: 15px;
+margin-left: 10px;
+}
+
+.nav_links li {
+display: inline-block;
+padding: 0px 40px;
+}
+
+.nav_links li a {
+transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+color: #ff9668;
+text-decoration: underline;
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    height: fit-content;
+}
+
+h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#contact_box {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    height: 400px;
+}
+
+#contact_icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    background-color: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.25);
+    margin-top: 45px;
+}
+
+#form {
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 50px rgba(255, 255, 255, 0.432);
+    justify-content:space-around;
+    border-radius: 5px;
+    
+}
+
+#SM{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(57, 57, 57);
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.input {
+    width: 80%;
+    height: 40px;
+    margin-left: 40px;
+    border: none;
+    border-bottom: 3px solid rgb(117, 114, 114);
+}
+
+#submit {
+    width: 85px;
+    height: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    background-color:rgb(78, 202, 208);
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.25);
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    transition: all .7s;
+}
+
+#submit:hover {
+    background-color:rgb(69, 177, 183);
+}
+
+.cart_icon {
+    font-size: 40px;
+    color: white;
+    margin-left: 50px;
+}

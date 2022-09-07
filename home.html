@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="./script.js" defer></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style_home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="p">
+        <i
+          class="bi bi-brightness-high-fill"
+          id="toggleDark"
+          onclick="DarkMode()"
+        ></i>
+      </div>
+      <div class="div">
+        <img class="logo" src="./images/smartphone.png" alt="logo" />
+        <h2>eBook Store</h2>
+      </div>
+
+      <nav>
+        <ul class="nav_links">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html"> About Us</a></li>
+          <li><a href="./Contact.html">Contact us</a></li>
+          <li><a href="#swiper">News</a></li>
+        </ul>
+      </nav>
+      <div id="seaech_box">
+        <img src="./images/magnifier.png" alt="" id="magnifier">
+        <input type="search" id="search" value="" onchange="openPage()" placeholder=" search"/>
+      </div>
+      <div style="display: flex">
+        <div style="width: 1px; height: 50px; background-color: white"></div>
+        <div class="cart_icon" onclick="cart()"><i class="bx bx-cart"></i></div>
+      </div>
+    </header>
+
+  
+
+    <div id="cart">
+      <div id="container">
+        <h1
+          style="
+            width: 40px;
+            margin: 0;
+            margin-right: -400px;
+            margin-top: 5px;
+            cursor: pointer;
+          "
+          id="X"
+          onclick="del()"
+        >
+          X
+        </h1>
+        <h1 style="margin: 0; margin-top: -30px; margin-left: -250px" id="yc">
+          Your Cart
+        </h1>
+
+        <div
+          style="
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid rgb(189, 189, 189);
+            padding-bottom: 10px;
+          "
+        >
+          <h5 id="pr">PRODUCT</h5>
+          <h5 id="qu" style="margin-left: 170px">PRICE</h5>
+          <h5 id="to" style="margin-left: auto; margin-right: 10px">
+            QUANTITY
+          </h5>
+        </div>
+        <div id="cartitem" class="cartitem"></div>
+        <hr style="width: 100%; border-color: rgb(193, 193, 193)" />
+        <div id="total" style="display: flex; margin-left: auto; justify-content: center; align-items: center;">
+          <div class="total">Total : </div>
+          <div class="price"> $ 0</div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      style="height: 55vh; width: 70%; margin: auto; padding-top: 100px"
+      id="swiper"
+    >
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/0.png" alt="" /></div>
+          <div class="swiper-slide"><img src="./images/99.png" alt="" /></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <section id="container1">
+      <div id="sec1">
+        <div style="display: flex; flex-direction: column">
+          <h2 style="color: white; font-size: xx-large">Novels</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+            Repellendus sint eum nulla dolore possimus vitae est, <br />
+            quos consequatur sit beatae ut labore architecto<br />
+            exercitationem neque a laudantium inventore facilis. Perferendis?
+          </p>
+          <a href=""><button style="color: #600013">Explore Now</button></a>
+        </div>
+
+        <div class="books" id="books">
+          <div class="card" id="item1">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/صانع الظلام.jpg" alt="" />
+            <div
+              class="title-product"
+              style="text-align: center; color: #ffffff"
+            >
+              صانع الظلام
+            </div>
+            <div style="color: #ffffff">$14.99 </div>
+            <button style="color: #600013" onclick="addToCart(item1)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item2">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/nov.jpg" alt="" />
+            <div style="text-align: center; color: #ffffff">Book of Night</div>
+            <div style="color: #ffffff">$7.9</div>
+            <button style="color: #600013" onclick="addToCart(item2)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item3">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/novel1.png" alt="" />
+            <div style="text-align: center; color: #ffffff">
+              The Glass Hotel
+            </div>
+            <div style="color: #ffffff">$20</div>
+            <button style="color: #600013" onclick="addToCart(item3)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item4">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img
+              class="container_img"
+              src="./images/3d6120142763613.626cf152791ba.jpg"
+              alt=""
+            />
+            <div style="text-align: center; color: #ffffff">في تلك الليلة</div>
+            <div style="color: #ffffff">$17.5</div>
+            <button style="color: #600013" onclick="addToCart(item4)">
+              add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec2">
+        <div style="display: flex; flex-direction: column">
+          <h2 style="color: white; font-size: xx-large">Scince</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+            Repellendus sint eum nulla dolore possimus vitae est, <br />
+            quos consequatur sit beatae ut labore architecto<br />
+            exercitationem neque a laudantium inventore facilis. Perferendis?
+          </p>
+          <button style="color: #264653">Shop Now</button>
+        </div>
+        <div class="books">
+          <div class="card" id="item5">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/sc.png" alt="" />
+            <div style="text-align: center; color: white">infinite powers</div>
+            <div style="color: #ffffff">$13</div>
+            <button style="color: #264653" onclick="addToCart(item5)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item6">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/SC2.png" alt="" />
+            <div style="text-align: center; color: white">Space 2069</div>
+            <div style="color: #ffffff">$10</div>
+            <button style="color: #264653" onclick="addToCart(item6)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item7">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/sc3.jpg" alt="" />
+            <div style="text-align: center; color: white">
+              A lab of One's Own
+            </div>
+            <div style="color: #ffffff">$17</div>
+            <button style="color: #264653" onclick="addToCart(item7)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item8">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/sc4.jpg" alt="" />
+            <div style="text-align: center; color: white">
+              A BRIEF HISTORY OF TIME
+            </div>
+            <div style="color: #ffffff">$24.99</div>
+            <button style="color: #264653" onclick="addToCart(item8)">
+              add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec3">
+        <div style="display: flex; flex-direction: column">
+          <h2 style="color: white; font-size: xx-large">
+            Human development and <br />
+            self-development
+          </h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+            Repellendus sint eum nulla dolore possimus vitae est, <br />
+            quos consequatur sit beatae ut labore architecto<br />
+            exercitationem neque a laudantium inventore facilis. Perferendis?
+          </p>
+          <button style="color: #2a9d8f">learn more</button>
+        </div>
+
+        <div class="books">
+          <div class="card" id="item9">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/power.png" alt="" />
+            <div style="text-align: center; color: white">POWER</div>
+            <div style="color: #ffffff">$8.50</div>
+            <button style="color: #2a9d8f" onclick="addToCart(item9)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item10">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/at.jpg" alt="" />
+            <div style="text-align: center; color: white">Atomic Habits</div>
+            <div style="color: #ffffff">$21.5</div>
+            <button style="color: #2a9d8f" onclick="addToCart(item10)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item11">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/tn2.png" alt="" />
+            <div
+              style="
+                text-align: center;
+                color: white;
+                font-size: 12px;
+                line-height: 1;
+              "
+            >
+              The Scientific Secrets of <br />
+              Perfect Timing
+            </div>
+            <div style="color: #ffffff">$16.80</div>
+            <button style="color: #2a9d8f" onclick="addToCart(item11)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item12">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/tn.png" alt="" />
+            <div style="text-align: center; color: white">SUPER COACH</div>
+            <div style="color: #ffffff">$11.99</div>
+            <button style="color: #2a9d8f" onclick="addToCart(item12)">
+              add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="sec4">
+        <div style="display: flex; flex-direction: column">
+          <h2 style="color: white; font-size: xx-large">HISTORY</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br />
+            Repellendus sint eum nulla dolore possimus vitae est, <br />
+            quos consequatur sit beatae ut labore architecto<br />
+            exercitationem neque a laudantium inventore facilis. Perferendis?
+          </p>
+          <button style="color: #d8893d">Show more</button>
+        </div>
+
+        <div class="books">
+          <div class="card" id="item13">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/hi.jpg" alt="" />
+            <div style="text-align: center; color: white">The SHADOW KING</div>
+            <div style="color: #ffffff">$15</div>
+            <button style="color: #d8893d" onclick="addToCart(item13)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item14">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/his.jpg" alt="" />
+            <div style="text-align: center; color: white; font-size: 14PX;">THE WORLD OF THE PHARAOHS</div>
+            <div style="color: #ffffff">$19</div>
+            <button style="color: #d8893d" onclick="addToCart(item14)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item15">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/hist.png" alt="" />
+            <div style="text-align: center; color: white; font-size: 12px">
+              مئة من عظماء امة الاسلام غيرو التاريخ
+            </div>
+            <div style="color: #ffffff">$21.5</div>
+            <button style="color: #d8893d" onclick="addToCart(item15)">
+              add to cart
+            </button>
+          </div>
+
+          <div class="card" id="item16">
+            <img class="rating" src="./images/rating (2).png" alt="" />
+            <img class="container_img" src="./images/histo.jpg" alt="" />
+            <div style="text-align: center; color: white">THE NORMANS</div>
+            <div style="color: #ffffff">$30</div>
+            <button style="color: #d8893d" onclick="addToCart(item16)">
+              add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/" target="_blank" id="i"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://www.snapchat.com/" target="_blank" id="s"
+          ><i class="fab fa-snapchat"></i
+        ></a>
+        <a href="https://twitter.com/" target="_blank" id="t"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="_blank" id="f"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+
+      <p class="copyright">© ebook store 2022</p>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
